@@ -1,2 +1,3 @@
 # frame-and-clip-extractor
-Python script to extract frames and clip from a longer video
+
+This Python project implements a recursive directory traversal to identify and process videos. The project's primary function is to find videos within a specified directory. If a video's duration exceeds 15 minutes, the video is split into smaller segments and the videos are analyzed using computer vision (YOLOv8) for object detection. Frame-by-frame analysis is performed, and saved frames are created for each identified object. To mitigate redundant saving of similar images, ImageHash is employed to generate unique identifiers for each clip. The project's overall goal is to efficiently manage video processing tasks.
